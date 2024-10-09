@@ -8,5 +8,6 @@ namespace Back_end_Challenge.Models
        public string? Nombre { get; set; }
       public  DateTime FechaCreacion { get; set; }
         public virtual ICollection<Empleado> Empleados { get; } = new List<Empleado>();
+        public int IdDepartamentoNavigation { get; set; }
     }
 }

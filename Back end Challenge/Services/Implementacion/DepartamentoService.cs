@@ -18,7 +18,7 @@ namespace Back_end_Challenge.Services.Implementacion
             try
             {
                 List<Departamento> lista = new List<Departamento>();
-                lista = await _dbContext.Empleados.Include(dpt => dpt.IdDepartamentoNavigation).ToListAsync();
+                lista = await _dbContext.Departamentos.Include(dpt => dpt.IdDepartamentoNavigation).ToListAsync();
                 return lista;
                 
             }catch (Exception ex)

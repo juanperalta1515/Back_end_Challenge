@@ -8,6 +8,7 @@ namespace Back_end_Challenge.Services.Implementacion
     public class EmpleadoService : IEmpleadoService
     {
         private DBempleadoContext _dbContext;
+
         public EmpleadoService(DBempleadoContext dbContext)
         {
             _dbContext = dbContext;
@@ -22,7 +23,7 @@ namespace Back_end_Challenge.Services.Implementacion
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw ;
 
             }
         }
