@@ -14,6 +14,21 @@ namespace Back_end_Challenge.Services.Implementacion
             _dbContext = dbContext;
         }
 
+        public Task<Empleado> Add(Empleado modelo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Delete(Empleado modelo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Empleado> Get(int IdEmpleado)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<Empleado>> GetList()
         {
         try{
@@ -26,6 +41,11 @@ namespace Back_end_Challenge.Services.Implementacion
                 throw ;
 
             }
+        }
+
+        public Task<bool> Update(Empleado modelo)
+        {
+            throw new NotImplementedException();
         }
     }
 }

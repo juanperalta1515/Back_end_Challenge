@@ -40,7 +40,7 @@ namespace Back_end_Challenge.Services.Implementacion
             }
 
         }
-        public Task<Departamento>Add(Departamento models)
+        public Task<Departamento> Add(Departamento models)
         {
             try
             {
