@@ -2,6 +2,7 @@
 using Back_end_Challenge.Models;
 using Back_end_Challenge.Services.Contrato;
 using Microsoft.AspNetCore.Identity;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Back_end_Challenge.Services.Implementacion
 {
@@ -26,30 +27,30 @@ namespace Back_end_Challenge.Services.Implementacion
                 throw;
             }
         }
-        public async Task<Departamento>Get(int idEmpleado)
-        {
-            try
-            {
-                Departamento? encontrado = new Departamento();
-                encontrado = await _dbContext.Empleados.Include(dpl => dpl.IdDepartamentoNavigation).Where(encontrado => idEmpleado).FirstOrDefaultAsync();
-                return encontrado;
+        //public async Task<Departamento>Get(int idEmpleado)
+        //{
+        //    try
+        //    {
+        //        Departamento? encontrado = new Departamento();
+        //        encontrado = await _dbContext.Empleados.Include(dpl => dpl.IdDepartamentoNavigation).Where(encontrado => idEmpleado).FirstOrDefaultAsync();
+        //        return encontrado;
 
-            }catch (Exception)
-            {
-                throw;
-            }
+        //    }catch (Exception)
+        //    {
+        //        throw;
+        //    }
 
-        }
-        public Task<Departamento> Add(Departamento models)
-        {
-            try
-            {
+        //}
+        //public Task<Departamento> Add(Departamento models)
+        //{
+        //    try
+        //    {
+             
 
-
-            }catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //    }catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
     }
 }

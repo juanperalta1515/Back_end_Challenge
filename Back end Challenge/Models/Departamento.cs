@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+
+using Microsoft.EntityFrameworkCore;
+
 namespace Back_end_Challenge.Models
 {
     public class Departamento
